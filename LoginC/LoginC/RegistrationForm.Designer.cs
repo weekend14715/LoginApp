@@ -44,21 +44,21 @@
             NicTbox.Location = new Point(313, 304);
             NicTbox.Name = "NicTbox";
             NicTbox.Size = new Size(173, 27);
-            NicTbox.TabIndex = 14;
+            NicTbox.TabIndex = 4;
             // 
             // nameTbox
             // 
             nameTbox.Location = new Point(314, 227);
             nameTbox.Name = "nameTbox";
             nameTbox.Size = new Size(173, 27);
-            nameTbox.TabIndex = 16;
+            nameTbox.TabIndex = 3;
             // 
             // passTbox
             // 
             passTbox.Location = new Point(314, 156);
             passTbox.Name = "passTbox";
             passTbox.Size = new Size(173, 27);
-            passTbox.TabIndex = 15;
+            passTbox.TabIndex = 2;
             // 
             // label4
             // 
@@ -74,7 +74,7 @@
             UsernameTbox.Location = new Point(315, 79);
             UsernameTbox.Name = "UsernameTbox";
             UsernameTbox.Size = new Size(173, 27);
-            UsernameTbox.TabIndex = 17;
+            UsernameTbox.TabIndex = 1;
             // 
             // nameLabel
             // 
