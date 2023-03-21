@@ -60,10 +60,10 @@ namespace LoginC
                     writer.WriteLine(UsernameTbox.Text);
                     writer.WriteLine(passTbox.Text);
                 }
-            }    
-                #region Condition
-                if (string.IsNullOrWhiteSpace(UsernameTbox.Text) &&
-               string.IsNullOrWhiteSpace(passTbox.Text))
+            }
+            #region Condition
+            if (string.IsNullOrWhiteSpace(UsernameTbox.Text) &&
+           string.IsNullOrWhiteSpace(passTbox.Text))
             {
                 MessageBox.Show("Please Fill All The Fields");
                 return;
@@ -90,7 +90,11 @@ namespace LoginC
                 MyUser.ShowError();
             }
         }
-        
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
