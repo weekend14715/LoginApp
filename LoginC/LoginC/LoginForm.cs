@@ -45,11 +45,24 @@ namespace LoginC
             RegistrationForm reg = new RegistrationForm();
             reg.ShowDialog();
         }
-
+        private bool rememberMe = false;
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            rememberMe = checkBox1.Checked;
+        }
         private void LogBtn_Click(object sender, EventArgs e)
         {
-            #region Condition
-            if (string.IsNullOrWhiteSpace(UsernameTbox.Text) &&
+            if (rememberMe)
+            {
+                string fileName = "user_accounts.txt";
+                using (StreamWriter writer = new StreamWriter(fileName))
+                {
+                    writer.WriteLine(UsernameTbox.Text);
+                    writer.WriteLine(passTbox.Text);
+                }
+            }    
+                #region Condition
+                if (string.IsNullOrWhiteSpace(UsernameTbox.Text) &&
                string.IsNullOrWhiteSpace(passTbox.Text))
             {
                 MessageBox.Show("Please Fill All The Fields");
@@ -77,6 +90,7 @@ namespace LoginC
                 MyUser.ShowError();
             }
         }
+        
     }
 
 }

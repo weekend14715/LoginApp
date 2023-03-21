@@ -34,6 +34,7 @@
             label1 = new Label();
             regBtn = new Button();
             LogBtn = new Button();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
             // passTbox
@@ -89,12 +90,24 @@
             LogBtn.UseVisualStyleBackColor = true;
             LogBtn.Click += LogBtn_Click;
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(525, 229);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(120, 24);
+            checkBox1.TabIndex = 22;
+            checkBox1.Text = "Lưu tài khoản";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DodgerBlue;
             ClientSize = new Size(800, 450);
+            Controls.Add(checkBox1);
             Controls.Add(passTbox);
             Controls.Add(UsernameTbox);
             Controls.Add(label2);
@@ -116,5 +129,6 @@
         private Label label1;
         private Button regBtn;
         private Button LogBtn;
+        private CheckBox checkBox1;
     }
 }
