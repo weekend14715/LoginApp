@@ -124,6 +124,7 @@
             // 
             // RegistrationForm
             // 
+            AcceptButton = regBtn;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PaleGreen;
