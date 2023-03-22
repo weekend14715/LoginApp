@@ -81,8 +81,13 @@ namespace LoginC
 
             if (MyUser.IsEqual(ResUser, CurUser))
             {
-                RealApp real = new RealApp();
-                real.ShowDialog();
+
+                // Tắt cửa sổ đăng nhập
+             this.Hide();
+
+                // Mở cửa sổ RealApp
+                RealApp realAppForm = new RealApp();
+                realAppForm.Show();
             }
 
             else
