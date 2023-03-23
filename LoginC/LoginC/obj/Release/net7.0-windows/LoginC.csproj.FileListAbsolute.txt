@@ -26,6 +26,7 @@ C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-wind
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.genruntimeconfig.cache
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\ref\LoginC.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.Properties.Resources.resources
+C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.dll.config
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.dll.manifest
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.application
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.dll.manifest

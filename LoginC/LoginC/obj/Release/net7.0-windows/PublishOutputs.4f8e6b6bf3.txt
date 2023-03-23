@@ -2,6 +2,7 @@ C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-wind
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\LoginC.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\LoginC.deps.json
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\LoginC.runtimeconfig.json
+C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\LoginC.dll.config
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\LoginC.pdb
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\FireSharp.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\Microsoft.Threading.Tasks.Extensions.Desktop.dll
