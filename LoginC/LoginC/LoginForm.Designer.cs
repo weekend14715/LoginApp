@@ -152,9 +152,9 @@
             labelVersion.AutoSize = true;
             labelVersion.Location = new Point(359, 426);
             labelVersion.Name = "labelVersion";
-            labelVersion.Size = new Size(50, 20);
+            labelVersion.Size = new Size(64, 20);
             labelVersion.TabIndex = 24;
-            labelVersion.Text = "label6";
+            labelVersion.Text = "Ver 1.0.1";
             labelVersion.Click += labelVersion_Click;
             // 
             // LoginForm

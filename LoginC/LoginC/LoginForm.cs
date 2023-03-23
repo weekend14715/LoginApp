@@ -58,7 +58,7 @@ namespace LoginC
                     checkBox1.Checked = true;
                 }
             }
-            
+
         }
 
         private static Settings GetDefault()
