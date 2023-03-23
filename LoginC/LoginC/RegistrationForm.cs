@@ -11,6 +11,11 @@ using FireSharp.Config;
 using FireSharp.Response;
 using FireSharp.Interfaces;
 using learnFireBase;
+using System.Net;
+using System.Net.Mail;
+
+using Microsoft.AspNetCore.Identity;
+
 
 namespace LoginC
 {
@@ -69,7 +74,25 @@ namespace LoginC
             SetResponse set = client.Set(@"Users/" + UsernameTbox.Text, user);
 
             MessageBox.Show("Successfully registered!");
+            this.Hide();
+            otpmail mail = new otpmail();
+            mail.Show();
+
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            {
+                string email = EmailTbox.Text;
+                string confirmationLink = "https://example.com/confirm?token=abc123";
+
+                var emailHelper = new EmailHelper();
+                emailHelper.SendConfirmationEmail(email, confirmationLink);
+            }
+        }
+
     }
+
+  
+
 
 }

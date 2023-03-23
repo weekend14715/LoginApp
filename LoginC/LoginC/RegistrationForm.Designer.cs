@@ -37,6 +37,12 @@
             label2 = new Label();
             label1 = new Label();
             regBtn = new Button();
+            EmailTbox = new Label();
+            textBox1 = new TextBox();
+            button1 = new Button();
+            OTP = new Label();
+            textBox2 = new TextBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // NicTbox
@@ -114,7 +120,7 @@
             // regBtn
             // 
             regBtn.BackColor = Color.MediumSpringGreen;
-            regBtn.Location = new Point(109, 341);
+            regBtn.Location = new Point(110, 491);
             regBtn.Name = "regBtn";
             regBtn.Size = new Size(134, 43);
             regBtn.TabIndex = 9;
@@ -122,15 +128,76 @@
             regBtn.UseVisualStyleBackColor = false;
             regBtn.Click += regBtn_Click;
             // 
+            // EmailTbox
+            // 
+            EmailTbox.AutoSize = true;
+            EmailTbox.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            EmailTbox.Location = new Point(95, 324);
+            EmailTbox.Name = "EmailTbox";
+            EmailTbox.Size = new Size(70, 31);
+            EmailTbox.TabIndex = 10;
+            EmailTbox.Text = "Email";
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(255, 224, 192);
+            textBox1.Location = new Point(95, 358);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(173, 27);
+            textBox1.TabIndex = 4;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(287, 358);
+            button1.Name = "button1";
+            button1.Size = new Size(59, 27);
+            button1.TabIndex = 14;
+            button1.Text = "Gửi";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // OTP
+            // 
+            OTP.AutoSize = true;
+            OTP.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            OTP.Location = new Point(95, 392);
+            OTP.Name = "OTP";
+            OTP.Size = new Size(55, 31);
+            OTP.TabIndex = 10;
+            OTP.Text = "OTP";
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = Color.FromArgb(255, 224, 192);
+            textBox2.Location = new Point(95, 426);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(173, 27);
+            textBox2.TabIndex = 4;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(287, 426);
+            button2.Name = "button2";
+            button2.Size = new Size(79, 27);
+            button2.TabIndex = 14;
+            button2.Text = "Xác thực";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // RegistrationForm
             // 
             AcceptButton = regBtn;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PaleGreen;
-            ClientSize = new Size(369, 445);
+            ClientSize = new Size(432, 600);
+            Controls.Add(button2);
+            Controls.Add(textBox2);
+            Controls.Add(button1);
+            Controls.Add(textBox1);
             Controls.Add(NicTbox);
+            Controls.Add(OTP);
             Controls.Add(nameTbox);
+            Controls.Add(EmailTbox);
             Controls.Add(passTbox);
             Controls.Add(label4);
             Controls.Add(UsernameTbox);
@@ -156,5 +223,11 @@
         private Label label2;
         private Label label1;
         private Button regBtn;
+        private Label EmailTbox;
+        private TextBox textBox1;
+        private Button button1;
+        private Label OTP;
+        private TextBox textBox2;
+        private Button button2;
     }
 }
