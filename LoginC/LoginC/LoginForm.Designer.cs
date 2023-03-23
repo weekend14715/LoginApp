@@ -38,6 +38,7 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            labelVersion = new Label();
             SuspendLayout();
             // 
             // passTbox
@@ -146,6 +147,16 @@
             label5.Text = "0369647957";
             label5.TextAlign = ContentAlignment.TopRight;
             // 
+            // labelVersion
+            // 
+            labelVersion.AutoSize = true;
+            labelVersion.Location = new Point(359, 426);
+            labelVersion.Name = "labelVersion";
+            labelVersion.Size = new Size(50, 20);
+            labelVersion.TabIndex = 24;
+            labelVersion.Text = "label6";
+            labelVersion.Click += labelVersion_Click;
+            // 
             // LoginForm
             // 
             AcceptButton = LogBtn;
@@ -153,6 +164,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DodgerBlue;
             ClientSize = new Size(800, 450);
+            Controls.Add(labelVersion);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -182,5 +194,6 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Label labelVersion;
     }
 }

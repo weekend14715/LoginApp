@@ -15,6 +15,8 @@ using LoginC.Properties;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 
+
+
 namespace LoginC
 {
     public partial class LoginForm : Form
@@ -56,8 +58,7 @@ namespace LoginC
                     checkBox1.Checked = true;
                 }
             }
-
-
+            
         }
 
         private static Settings GetDefault()
@@ -92,7 +93,7 @@ namespace LoginC
         }
         private void LogBtn_Click(object sender, EventArgs e)
         {
-           
+
             #region Condition
             if (string.IsNullOrWhiteSpace(UsernameTbox.Text) &&
            string.IsNullOrWhiteSpace(passTbox.Text))
@@ -101,13 +102,13 @@ namespace LoginC
                 return;
             }
             #endregion
-            
-            
 
 
 
 
-            
+
+
+
             FirebaseResponse res = client.Get(@"Users/" + UsernameTbox.Text);
             MyUser ResUser = res.ResultAs<MyUser>();// database result
 
@@ -121,7 +122,7 @@ namespace LoginC
             {
 
                 // Tắt cửa sổ đăng nhập
-             this.Hide();
+                this.Hide();
 
                 // Mở cửa sổ RealApp
                 RealApp realAppForm = new RealApp();
@@ -138,8 +139,13 @@ namespace LoginC
         {
 
         }
+
+        private void labelVersion_Click(object sender, EventArgs e)
+        {
+
+        }
         // Lưu thông tin đăng nhập vào cài đặt ứng dụng nếu người dùng đã chọn "Lưu thông tin đăng nhập"
-         
+
 
 
 

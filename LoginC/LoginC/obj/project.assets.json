@@ -776,6 +776,7 @@
       "packagesPath": "C:\\Users\\hhtua\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\hhtua\\Downloads\\LoginApp\\LoginApp\\LoginC\\LoginC\\obj\\",
       "projectStyle": "PackageReference",
+      "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
