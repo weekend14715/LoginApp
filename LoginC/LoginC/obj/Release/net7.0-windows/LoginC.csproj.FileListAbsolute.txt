@@ -47,6 +47,7 @@ C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-wind
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\MailKit.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\MimeKit.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\BouncyCastle.Crypto.dll
+C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.QuenMK.resources
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.dll.manifest
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.application
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.dll.manifest

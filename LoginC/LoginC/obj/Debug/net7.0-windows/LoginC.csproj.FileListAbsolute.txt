@@ -47,3 +47,4 @@ C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Debug\net7.0-window
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Debug\net7.0-windows\MailKit.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Debug\net7.0-windows\MimeKit.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Debug\net7.0-windows\BouncyCastle.Crypto.dll
+C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Debug\net7.0-windows\LoginC.QuenMK.resources

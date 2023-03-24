@@ -146,6 +146,14 @@ namespace LoginC
         {
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+           
+            QuenMK forgotPasswordForm = new QuenMK();
+            forgotPasswordForm.Show();
+            this.Hide();
+        }
         // Lưu thông tin đăng nhập vào cài đặt ứng dụng nếu người dùng đã chọn "Lưu thông tin đăng nhập"
 
 

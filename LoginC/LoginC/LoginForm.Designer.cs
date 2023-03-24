@@ -39,6 +39,8 @@
             label4 = new Label();
             label5 = new Label();
             labelVersion = new Label();
+            label6 = new Label();
+            label7 = new Label();
             SuspendLayout();
             // 
             // passTbox
@@ -80,7 +82,7 @@
             // 
             // regBtn
             // 
-            regBtn.Location = new Point(565, 360);
+            regBtn.Location = new Point(571, 360);
             regBtn.Name = "regBtn";
             regBtn.Size = new Size(134, 43);
             regBtn.TabIndex = 4;
@@ -90,7 +92,7 @@
             // 
             // LogBtn
             // 
-            LogBtn.Location = new Point(565, 260);
+            LogBtn.Location = new Point(571, 268);
             LogBtn.Name = "LogBtn";
             LogBtn.Size = new Size(134, 43);
             LogBtn.TabIndex = 3;
@@ -157,6 +159,30 @@
             labelVersion.Text = "Ver 1.0.4";
             labelVersion.Click += labelVersion_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Cursor = Cursors.Hand;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.Cyan;
+            label6.Location = new Point(565, 228);
+            label6.Name = "label6";
+            label6.Size = new Size(145, 28);
+            label6.TabIndex = 25;
+            label6.Text = "Quên mật khẩu";
+            label6.Click += label6_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = Color.Cyan;
+            label7.Location = new Point(536, 318);
+            label7.Name = "label7";
+            label7.Size = new Size(203, 28);
+            label7.TabIndex = 25;
+            label7.Text = "Bạn chưa có tài khoản";
+            // 
             // LoginForm
             // 
             AcceptButton = LogBtn;
@@ -164,6 +190,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DodgerBlue;
             ClientSize = new Size(800, 450);
+            Controls.Add(label7);
+            Controls.Add(label6);
             Controls.Add(labelVersion);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -195,5 +223,7 @@
         private Label label4;
         private Label label5;
         private Label labelVersion;
+        private Label label6;
+        private Label label7;
     }
 }
