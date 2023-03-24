@@ -17,6 +17,8 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 
 
+
+
 namespace LoginC
 {
     public partial class LoginForm : Form
@@ -40,7 +42,7 @@ namespace LoginC
 
             catch
             {
-                MessageBox.Show("No Internet or Connection Problem");
+                MessageBox.Show("Có vấn đề về kết nối Internet");
 
             }
             {
