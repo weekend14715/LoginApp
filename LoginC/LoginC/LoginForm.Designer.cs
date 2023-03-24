@@ -154,7 +154,7 @@
             labelVersion.Name = "labelVersion";
             labelVersion.Size = new Size(64, 20);
             labelVersion.TabIndex = 24;
-            labelVersion.Text = "Ver 1.0.2";
+            labelVersion.Text = "Ver 1.0.3";
             labelVersion.Click += labelVersion_Click;
             // 
             // LoginForm

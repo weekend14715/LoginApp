@@ -45,12 +45,13 @@
             MailTbox = new TextBox();
             label3 = new Label();
             otpLabel = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // NicTbox
             // 
             NicTbox.BackColor = Color.FromArgb(255, 224, 192);
-            NicTbox.Location = new Point(95, 283);
+            NicTbox.Location = new Point(135, 249);
             NicTbox.Name = "NicTbox";
             NicTbox.Size = new Size(173, 27);
             NicTbox.TabIndex = 4;
@@ -58,7 +59,7 @@
             // nameTbox
             // 
             nameTbox.BackColor = Color.FromArgb(255, 224, 192);
-            nameTbox.Location = new Point(96, 206);
+            nameTbox.Location = new Point(135, 187);
             nameTbox.Name = "nameTbox";
             nameTbox.Size = new Size(173, 27);
             nameTbox.TabIndex = 3;
@@ -66,7 +67,7 @@
             // passTbox
             // 
             passTbox.BackColor = Color.FromArgb(255, 224, 192);
-            passTbox.Location = new Point(96, 135);
+            passTbox.Location = new Point(133, 125);
             passTbox.Name = "passTbox";
             passTbox.Size = new Size(173, 27);
             passTbox.TabIndex = 2;
@@ -75,7 +76,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(95, 249);
+            label4.Location = new Point(26, 249);
             label4.Name = "label4";
             label4.Size = new Size(75, 31);
             label4.TabIndex = 10;
@@ -84,7 +85,7 @@
             // UsernameTbox
             // 
             UsernameTbox.BackColor = Color.FromArgb(255, 224, 192);
-            UsernameTbox.Location = new Point(97, 58);
+            UsernameTbox.Location = new Point(135, 57);
             UsernameTbox.Name = "UsernameTbox";
             UsernameTbox.Size = new Size(173, 27);
             UsernameTbox.TabIndex = 1;
@@ -93,7 +94,7 @@
             // 
             nameLabel.AutoSize = true;
             nameLabel.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            nameLabel.Location = new Point(97, 172);
+            nameLabel.Location = new Point(23, 183);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new Size(82, 31);
             nameLabel.TabIndex = 12;
@@ -103,7 +104,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(95, 101);
+            label2.Location = new Point(23, 119);
             label2.Name = "label2";
             label2.Size = new Size(112, 31);
             label2.TabIndex = 11;
@@ -113,7 +114,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(96, 23);
+            label1.Location = new Point(23, 51);
             label1.Name = "label1";
             label1.Size = new Size(111, 31);
             label1.TabIndex = 13;
@@ -122,7 +123,7 @@
             // regBtn
             // 
             regBtn.BackColor = Color.MediumSpringGreen;
-            regBtn.Location = new Point(110, 491);
+            regBtn.Location = new Point(153, 497);
             regBtn.Name = "regBtn";
             regBtn.Size = new Size(134, 43);
             regBtn.TabIndex = 9;
@@ -139,19 +140,21 @@
             // 
             // Sendbtn
             // 
-            Sendbtn.Location = new Point(296, 358);
+            Sendbtn.BackColor = Color.Salmon;
+            Sendbtn.ForeColor = SystemColors.ActiveCaptionText;
+            Sendbtn.Location = new Point(135, 342);
             Sendbtn.Name = "Sendbtn";
-            Sendbtn.Size = new Size(59, 27);
+            Sendbtn.Size = new Size(80, 33);
             Sendbtn.TabIndex = 14;
             Sendbtn.Text = "Gửi";
-            Sendbtn.UseVisualStyleBackColor = true;
+            Sendbtn.UseVisualStyleBackColor = false;
             Sendbtn.Click += Sendbtn_Click;
             // 
             // OTP
             // 
             OTP.AutoSize = true;
             OTP.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            OTP.Location = new Point(95, 392);
+            OTP.Location = new Point(26, 382);
             OTP.Name = "OTP";
             OTP.Size = new Size(55, 31);
             OTP.TabIndex = 10;
@@ -160,25 +163,26 @@
             // OtpTbox
             // 
             OtpTbox.BackColor = Color.FromArgb(255, 224, 192);
-            OtpTbox.Location = new Point(95, 426);
+            OtpTbox.Location = new Point(133, 390);
             OtpTbox.Name = "OtpTbox";
             OtpTbox.Size = new Size(173, 27);
             OtpTbox.TabIndex = 4;
             // 
             // otpBtn
             // 
-            otpBtn.Location = new Point(287, 426);
+            otpBtn.BackColor = Color.Salmon;
+            otpBtn.Location = new Point(133, 423);
             otpBtn.Name = "otpBtn";
-            otpBtn.Size = new Size(79, 27);
+            otpBtn.Size = new Size(82, 33);
             otpBtn.TabIndex = 14;
             otpBtn.Text = "Xác thực";
-            otpBtn.UseVisualStyleBackColor = true;
+            otpBtn.UseVisualStyleBackColor = false;
             otpBtn.Click += otpBtn_Click;
             // 
             // MailTbox
             // 
             MailTbox.BackColor = Color.FromArgb(255, 224, 192);
-            MailTbox.Location = new Point(95, 358);
+            MailTbox.Location = new Point(135, 309);
             MailTbox.Name = "MailTbox";
             MailTbox.Size = new Size(175, 27);
             MailTbox.TabIndex = 15;
@@ -187,7 +191,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(95, 324);
+            label3.Location = new Point(25, 305);
             label3.Name = "label3";
             label3.Size = new Size(70, 31);
             label3.TabIndex = 10;
@@ -196,12 +200,25 @@
             // otpLabel
             // 
             otpLabel.AutoSize = true;
-            otpLabel.Location = new Point(95, 456);
+            otpLabel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            otpLabel.ForeColor = Color.Red;
+            otpLabel.Location = new Point(307, 390);
             otpLabel.Name = "otpLabel";
-            otpLabel.Size = new Size(50, 20);
+            otpLabel.Size = new Size(244, 23);
             otpLabel.TabIndex = 17;
-            otpLabel.Text = "label5";
+            otpLabel.Text = "Điền OTP gửi về Email của bạn";
             otpLabel.Visible = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.Red;
+            label5.Location = new Point(307, 306);
+            label5.Name = "label5";
+            label5.Size = new Size(143, 31);
+            label5.TabIndex = 18;
+            label5.Text = "@gmail.com";
             // 
             // RegistrationForm
             // 
@@ -209,7 +226,8 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PaleGreen;
-            ClientSize = new Size(432, 600);
+            ClientSize = new Size(565, 600);
+            Controls.Add(label5);
             Controls.Add(otpLabel);
             Controls.Add(MailTbox);
             Controls.Add(otpBtn);
@@ -253,5 +271,6 @@
         private TextBox MailTbox;
         private Label label3;
         private Label otpLabel;
+        private Label label5;
     }
 }
