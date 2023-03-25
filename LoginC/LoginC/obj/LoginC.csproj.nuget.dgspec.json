@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hhtua\\Downloads\\LoginApp\\LoginApp\\LoginC\\LoginC\\LoginC.csproj": {}
+    "C:\\Users\\hhtua\\Source\\Repos\\LoginApp\\LoginC\\LoginC\\LoginC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hhtua\\Downloads\\LoginApp\\LoginApp\\LoginC\\LoginC\\LoginC.csproj": {
+    "C:\\Users\\hhtua\\Source\\Repos\\LoginApp\\LoginC\\LoginC\\LoginC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hhtua\\Downloads\\LoginApp\\LoginApp\\LoginC\\LoginC\\LoginC.csproj",
+        "projectUniqueName": "C:\\Users\\hhtua\\Source\\Repos\\LoginApp\\LoginC\\LoginC\\LoginC.csproj",
         "projectName": "LoginC",
-        "projectPath": "C:\\Users\\hhtua\\Downloads\\LoginApp\\LoginApp\\LoginC\\LoginC\\LoginC.csproj",
+        "projectPath": "C:\\Users\\hhtua\\Source\\Repos\\LoginApp\\LoginC\\LoginC\\LoginC.csproj",
         "packagesPath": "C:\\Users\\hhtua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hhtua\\Downloads\\LoginApp\\LoginApp\\LoginC\\LoginC\\obj\\",
+        "outputPath": "C:\\Users\\hhtua\\Source\\Repos\\LoginApp\\LoginC\\LoginC\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
