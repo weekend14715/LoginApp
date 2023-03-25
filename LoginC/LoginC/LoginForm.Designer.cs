@@ -202,6 +202,7 @@
             Controls.Add(LogBtn);
             Controls.Add(regBtn);
             Name = "LoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
             Load += LoginForm_Load;
             ResumeLayout(false);

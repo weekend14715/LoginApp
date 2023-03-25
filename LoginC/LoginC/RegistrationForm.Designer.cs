@@ -145,7 +145,7 @@
             Sendbtn.Location = new Point(135, 342);
             Sendbtn.Name = "Sendbtn";
             Sendbtn.Size = new Size(80, 33);
-            Sendbtn.TabIndex = 14;
+            Sendbtn.TabIndex = 6;
             Sendbtn.Text = "Gửi";
             Sendbtn.UseVisualStyleBackColor = false;
             Sendbtn.Click += Sendbtn_Click;
@@ -166,7 +166,7 @@
             OtpTbox.Location = new Point(133, 390);
             OtpTbox.Name = "OtpTbox";
             OtpTbox.Size = new Size(173, 27);
-            OtpTbox.TabIndex = 4;
+            OtpTbox.TabIndex = 7;
             // 
             // otpBtn
             // 
@@ -174,7 +174,7 @@
             otpBtn.Location = new Point(133, 423);
             otpBtn.Name = "otpBtn";
             otpBtn.Size = new Size(82, 33);
-            otpBtn.TabIndex = 14;
+            otpBtn.TabIndex = 8;
             otpBtn.Text = "Xác thực";
             otpBtn.UseVisualStyleBackColor = false;
             otpBtn.Click += otpBtn_Click;
@@ -185,7 +185,7 @@
             MailTbox.Location = new Point(135, 309);
             MailTbox.Name = "MailTbox";
             MailTbox.Size = new Size(175, 27);
-            MailTbox.TabIndex = 15;
+            MailTbox.TabIndex = 5;
             // 
             // label3
             // 
@@ -246,6 +246,7 @@
             Controls.Add(label1);
             Controls.Add(regBtn);
             Name = "RegistrationForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RegistrationForm";
             Load += RegistrationForm_Load;
             ResumeLayout(false);
