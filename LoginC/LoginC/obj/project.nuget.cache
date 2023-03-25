@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iUlMgiGaUuPHKMNNiSHLT3W1y+iCqkPLUX9WNPXgszFXSVI5MP2VyeVY5Xc6j0eTWHT6Mr/54q4LFVS93Ay9Wg==",
+  "dgSpecHash": "VXUhZ06z9T3BILIZWZQdY93i0cK1hwDUtBOd+j0FVOSY9OegmhTbyIdJMTpjQb2gEKA312msM7kU7elplzWbxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hhtua\\Source\\Repos\\LoginApp\\LoginC\\LoginC\\LoginC.csproj",
+  "projectFilePath": "C:\\Users\\hhtua\\Downloads\\LoginApp\\LoginApp\\LoginC\\LoginC\\LoginC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hhtua\\.nuget\\packages\\firesharp\\2.0.4\\firesharp.2.0.4.nupkg.sha512",
     "C:\\Users\\hhtua\\.nuget\\packages\\mailkit\\3.6.0\\mailkit.3.6.0.nupkg.sha512",

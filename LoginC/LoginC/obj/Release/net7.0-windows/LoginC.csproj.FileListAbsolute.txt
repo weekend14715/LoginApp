@@ -47,10 +47,6 @@ C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-wind
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\MailKit.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\MimeKit.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\BouncyCastle.Crypto.dll
-C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.dll.manifest
-C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.application
-C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.dll.manifest
-C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.application
 C:\Users\hhtua\Source\Repos\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.exe
 C:\Users\hhtua\Source\Repos\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.dll.config
 C:\Users\hhtua\Source\Repos\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.deps.json
@@ -100,7 +96,7 @@ C:\Users\hhtua\Source\Repos\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\re
 C:\Users\hhtua\Source\Repos\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.pdb
 C:\Users\hhtua\Source\Repos\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.genruntimeconfig.cache
 C:\Users\hhtua\Source\Repos\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\ref\LoginC.dll
-C:\Users\hhtua\Source\Repos\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.dll.manifest
-C:\Users\hhtua\Source\Repos\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.application
-C:\Users\hhtua\Source\Repos\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.dll.manifest
-C:\Users\hhtua\Source\Repos\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.application
+C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.dll.manifest
+C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.application
+C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.dll.manifest
+C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.application
