@@ -41,6 +41,11 @@
             labelVersion = new Label();
             label7 = new Label();
             label6 = new Label();
+            panel1 = new Panel();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // passTbox
@@ -118,7 +123,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(53, 85);
+            label3.Location = new Point(56, 50);
             label3.Name = "label3";
             label3.Size = new Size(303, 81);
             label3.TabIndex = 23;
@@ -156,7 +161,7 @@
             labelVersion.Name = "labelVersion";
             labelVersion.Size = new Size(64, 20);
             labelVersion.TabIndex = 24;
-            labelVersion.Text = "Ver 1.0.8";
+            labelVersion.Text = "Ver 1.0.9";
             // 
             // label7
             // 
@@ -184,6 +189,52 @@
             label6.MouseLeave += label6_MouseLeave;
             label6.MouseMove += label6_MouseMove;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Gainsboro;
+            panel1.Controls.Add(label10);
+            panel1.Controls.Add(label9);
+            panel1.Location = new Point(56, 185);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(333, 167);
+            panel1.TabIndex = 27;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = SystemColors.ButtonHighlight;
+            label8.Location = new Point(56, 154);
+            label8.Name = "label8";
+            label8.Size = new Size(176, 28);
+            label8.TabIndex = 23;
+            label8.Text = "Thông tin cập nhật";
+            label8.TextAlign = ContentAlignment.TopRight;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.ForeColor = Color.Chocolate;
+            label9.Location = new Point(7, 10);
+            label9.Name = "label9";
+            label9.Size = new Size(320, 23);
+            label9.TabIndex = 23;
+            label9.Text = "Gửi mật khẩu về mail khi quên mật khảu";
+            label9.TextAlign = ContentAlignment.TopRight;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.ForeColor = Color.Chocolate;
+            label10.Location = new Point(7, 45);
+            label10.Name = "label10";
+            label10.Size = new Size(190, 23);
+            label10.TabIndex = 23;
+            label10.Text = "Đăng ký xác thực Gmail";
+            label10.TextAlign = ContentAlignment.TopRight;
+            // 
             // LoginForm
             // 
             AcceptButton = LogBtn;
@@ -191,10 +242,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DodgerBlue;
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(label6);
             Controls.Add(label7);
             Controls.Add(labelVersion);
             Controls.Add(label5);
+            Controls.Add(label8);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(checkBox1);
@@ -208,6 +261,8 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
             Load += LoginForm_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -227,5 +282,9 @@
         private Label labelVersion;
         private Label label7;
         private Label label6;
+        private Panel panel1;
+        private Label label10;
+        private Label label9;
+        private Label label8;
     }
 }
