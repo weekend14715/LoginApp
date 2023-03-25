@@ -86,7 +86,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Vciie9+f9W43/khjFqkIijcTTvXC3JP1DGJ/eB64rlA=</dsig:DigestValue>
+      <dsig:DigestValue>aBxm2KcdRSOUd0ukmbkBqP3oKsr2x8WdOukbeqAXlHE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LoginC.dll.config" size="1027">
@@ -98,13 +98,13 @@
       <dsig:DigestValue>cfju876X0jnzWu2RsWOtS98P/ib/XNcapyW2Rl1rlB0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LoginC.exe" size="154112">
+  <file name="LoginC.exe" size="153600">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>0GnipBT1v60lhR5cp3em5gEcFbNQHXAWCb5S+0Pz4dc=</dsig:DigestValue>
+      <dsig:DigestValue>bmoXI88Tcvri+tloNd6wZt0jbwxm21EF1i4BmfOlHxc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LoginC.runtimeconfig.json" size="441">

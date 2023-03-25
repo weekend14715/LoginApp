@@ -184,6 +184,20 @@ namespace LoginC
                 MessageBox.Show("Mật khẩu đã được gửi về email của bạn");
             }
         }
+        private void label6_MouseMove(object sender, MouseEventArgs e)
+        {
+
+            label6.Cursor = Cursors.Hand;
+        }
+        private void label6_MouseEnter(object sender, EventArgs e)
+        {
+            label6.ForeColor = Color.Red;
+        }
+        private void label6_MouseLeave(object sender, EventArgs e)
+        {
+            label6.ForeColor = Color.Cyan;
+
+        }
     }
 
 }

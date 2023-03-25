@@ -180,6 +180,9 @@
             label6.TabIndex = 26;
             label6.Text = "Quên mật khẩu";
             label6.Click += label6_Click_1;
+            label6.MouseEnter += label6_MouseEnter;
+            label6.MouseLeave += label6_MouseLeave;
+            label6.MouseMove += label6_MouseMove;
             // 
             // LoginForm
             // 
