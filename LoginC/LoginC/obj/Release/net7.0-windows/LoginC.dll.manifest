@@ -86,7 +86,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>aBxm2KcdRSOUd0ukmbkBqP3oKsr2x8WdOukbeqAXlHE=</dsig:DigestValue>
+      <dsig:DigestValue>ALlB5ovjtz8YClShWctqO33ZM+gg08kkG1CQ/HmOr6s=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LoginC.dll.config" size="1027">
