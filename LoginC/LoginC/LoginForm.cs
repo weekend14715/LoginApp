@@ -13,6 +13,9 @@ using FireSharp.Interfaces;
 using learnFireBase;
 using LoginC.Properties;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using MailKit.Net.Smtp;
+using MailKit.Security;
+using MimeKit;
 
 
 
@@ -137,29 +140,50 @@ namespace LoginC
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+
+
+
+
+
+        private async void label6_Click_1(object sender, EventArgs e)
         {
+            {
+                // Lấy thông tin người dùng từ Firebase
+                FirebaseResponse res = client.Get(@"Users/" + UsernameTbox.Text);
+                MyUser ResUser = res.ResultAs<MyUser>();
 
+                // Kiểm tra xem người dùng có tồn tại trong Firebase không
+                if (ResUser == null)
+                {
+                    MessageBox.Show("Username không tồn tại");
+                    return;
+                }
+
+                // Khởi tạo một email message
+                var message = new MimeMessage();
+                message.From.Add(new MailboxAddress("Hoàng Tuấn", "ctump147@gmail.com"));
+                message.To.Add(new MailboxAddress("Tên người nhận", ResUser.Email + "@gmail.com"));
+                message.Subject = "Thông tin mật khẩu";
+
+                // Tạo nội dung email
+                string body = "Mật khẩu của bạn là: " + ResUser.Password;
+                message.Body = new TextPart("plain")
+                {
+                    Text = body
+                };
+
+                // Gửi email
+                using (var client = new SmtpClient())
+                {
+                    await client.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+                    await client.AuthenticateAsync("ctump147@gmail.com", "dogzqaasxcubltwo");
+                    await client.SendAsync(message);
+                    await client.DisconnectAsync(true);
+                }
+
+                MessageBox.Show("Mật khẩu đã được gửi về email của bạn");
+            }
         }
-
-        private void labelVersion_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-           
-            QuenMK forgotPasswordForm = new QuenMK();
-            forgotPasswordForm.Show();
-            this.Hide();
-        }
-        // Lưu thông tin đăng nhập vào cài đặt ứng dụng nếu người dùng đã chọn "Lưu thông tin đăng nhập"
-
-
-
-
-
     }
 
 }

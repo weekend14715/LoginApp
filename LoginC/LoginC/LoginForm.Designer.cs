@@ -39,8 +39,8 @@
             label4 = new Label();
             label5 = new Label();
             labelVersion = new Label();
-            label6 = new Label();
             label7 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // passTbox
@@ -156,21 +156,7 @@
             labelVersion.Name = "labelVersion";
             labelVersion.Size = new Size(64, 20);
             labelVersion.TabIndex = 24;
-            labelVersion.Text = "Ver 1.0.4";
-            labelVersion.Click += labelVersion_Click;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Cursor = Cursors.Hand;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.Cyan;
-            label6.Location = new Point(565, 228);
-            label6.Name = "label6";
-            label6.Size = new Size(145, 28);
-            label6.TabIndex = 25;
-            label6.Text = "Quên mật khẩu";
-            label6.Click += label6_Click;
+            labelVersion.Text = "Ver 1.0.5";
             // 
             // label7
             // 
@@ -183,6 +169,18 @@
             label7.TabIndex = 25;
             label7.Text = "Bạn chưa có tài khoản";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.Cyan;
+            label6.Location = new Point(568, 230);
+            label6.Name = "label6";
+            label6.Size = new Size(145, 28);
+            label6.TabIndex = 26;
+            label6.Text = "Quên mật khẩu";
+            label6.Click += label6_Click_1;
+            // 
             // LoginForm
             // 
             AcceptButton = LogBtn;
@@ -190,8 +188,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DodgerBlue;
             ClientSize = new Size(800, 450);
-            Controls.Add(label7);
             Controls.Add(label6);
+            Controls.Add(label7);
             Controls.Add(labelVersion);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -223,7 +221,7 @@
         private Label label4;
         private Label label5;
         private Label labelVersion;
-        private Label label6;
         private Label label7;
+        private Label label6;
     }
 }
