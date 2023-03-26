@@ -45,8 +45,12 @@ namespace LoginC
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            Bitmap searchImage = new Bitmap(pictureBox1.Image);
-            Point location = FindBitmap(searchImage);
+            System.Reflection.Assembly myAssembly = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream stream = myAssembly.GetManifestResourceStream("LoginC.Resources.click.png");
+            Image searchImage = Image.FromStream(stream);
+
+            Bitmap searchBitmap = (Bitmap)searchImage.Clone();
+            Point location = FindBitmap(searchBitmap);
             if (location != Point.Empty)
             {
                 SetCursorPos(location.X, location.Y);
@@ -95,50 +99,59 @@ namespace LoginC
             return Point.Empty;
         }
 
-        public class ZaloWindowOpener
+        public class OpenFrtPharmacy
         {
-            [DllImport("user32.dll", SetLastError = true)]
-            static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
+            [DllImport("user32.dll")]
+            private static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
             [DllImport("user32.dll")]
-            [return: MarshalAs(UnmanagedType.Bool)]
-            static extern bool SetForegroundWindow(IntPtr hWnd);
+            private static extern bool SetForegroundWindow(IntPtr hWnd);
 
             [DllImport("user32.dll")]
-            static extern bool IsIconic(IntPtr hWnd);
+            private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
-            [DllImport("user32.dll")]
-            static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+            private const int SW_RESTORE = 9;
 
-            const int SW_RESTORE = 9;
-
-            public static void OpenZaloWindow()
+            public void OpenPharmacy()
             {
-                Process[] processes = Process.GetProcessesByName("Zalo");
-                if (processes.Length == 0)
+                // Tìm handle của cửa sổ FRT Pharmacy
+                IntPtr windowHandle = FindWindow(null, "FRT Pharmacy"); // Thay "FRT Pharmacy" bằng tiêu đề của cửa sổ FRT Pharmacy
+
+                if (windowHandle != IntPtr.Zero)
                 {
-                    // Nếu Zalo không đang chạy, thông báo lỗi hoặc tiến hành mở Zalo
-                    // bằng đường dẫn thực thi Zalo.exe
-                    MessageBox.Show("Zalo chưa được khởi động.");
+                    // Nếu cửa sổ đang minimized, hiển thị cửa sổ trước khi đưa lên phía trước
+                    if (IsIconic(windowHandle))
+                    {
+                        ShowWindow(windowHandle, SW_RESTORE);
+                    }
+
+                    // Đưa cửa sổ FRT Pharmacy lên phía trước
+                    SetForegroundWindow(windowHandle);
                 }
                 else
                 {
-                    Process process = processes[0];
-                    IntPtr mainWindowHandle = process.MainWindowHandle;
-                    if (IsIconic(mainWindowHandle))
-                    {
-                        // Nếu cửa sổ đang minimized, phục hồi cửa sổ
-                        ShowWindow(mainWindowHandle, SW_RESTORE);
-                    }
-                    // Đưa cửa sổ Zalo lên trước màn hình
-                    SetForegroundWindow(mainWindowHandle);
+                    // Xử lý lỗi không tìm thấy cửa sổ FRT Pharmacy
                 }
             }
+
+            [DllImport("user32.dll")]
+            private static extern bool IsIconic(IntPtr hWnd);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ZaloWindowOpener.OpenZaloWindow();
+            OpenFrtPharmacy openFrtPharmacy = new OpenFrtPharmacy();
+            openFrtPharmacy.OpenPharmacy();
+
+        }
+        Process[] processes = Process.GetProcessesByName("FRT Pharmacy");
+        private void button3_Click(object sender, EventArgs e)
+        {
+            foreach (Process process in processes)
+            {
+                string path = process.MainModule.FileName;
+                MessageBox.Show("Đường dẫn đến FRT Pharmacy.exe là:\n" + path, "Thông báo");
+            }
         }
     }
 

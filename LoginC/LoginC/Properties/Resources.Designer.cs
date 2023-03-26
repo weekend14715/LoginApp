@@ -59,5 +59,14 @@ namespace LoginC.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string click {
+            get {
+                return ResourceManager.GetString("click", resourceCulture);
+            }
+        }
     }
 }

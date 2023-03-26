@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RealApp));
             btnSend = new Button();
-            pictureBox1 = new PictureBox();
             button2 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            button3 = new Button();
             SuspendLayout();
             // 
             // btnSend
@@ -45,16 +43,6 @@
             btnSend.UseVisualStyleBackColor = true;
             btnSend.Click += btnSend_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(300, 115);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(42, 39);
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
             // button2
             // 
             button2.Location = new Point(413, 240);
@@ -65,26 +53,34 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.Location = new Point(395, 84);
+            button3.Name = "button3";
+            button3.Size = new Size(167, 47);
+            button3.TabIndex = 3;
+            button3.Text = "click ảnh";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // RealApp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(pictureBox1);
             Controls.Add(btnSend);
             Name = "RealApp";
             Text = "RealApp";
             Load += RealApp_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Button btnSend;
-        private PictureBox pictureBox1;
         private Button button2;
+        private Button button3;
     }
 }
