@@ -42,9 +42,9 @@
             label7 = new Label();
             label6 = new Label();
             panel1 = new Panel();
-            label8 = new Label();
-            label9 = new Label();
             label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -147,7 +147,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ButtonHighlight;
-            label5.Location = new Point(117, 403);
+            label5.Location = new Point(120, 403);
             label5.Name = "label5";
             label5.Size = new Size(122, 28);
             label5.TabIndex = 23;
@@ -159,9 +159,9 @@
             labelVersion.AutoSize = true;
             labelVersion.Location = new Point(359, 426);
             labelVersion.Name = "labelVersion";
-            labelVersion.Size = new Size(64, 20);
+            labelVersion.Size = new Size(75, 20);
             labelVersion.TabIndex = 24;
-            labelVersion.Text = "Ver 1.0.9";
+            labelVersion.Text = "Ver 1.0.1.0";
             // 
             // label7
             // 
@@ -191,13 +191,38 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Gainsboro;
+            panel1.BackColor = Color.GreenYellow;
             panel1.Controls.Add(label10);
             panel1.Controls.Add(label9);
             panel1.Location = new Point(56, 185);
             panel1.Name = "panel1";
             panel1.Size = new Size(333, 167);
             panel1.TabIndex = 27;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.ForeColor = Color.Blue;
+            label10.Location = new Point(12, 11);
+            label10.Name = "label10";
+            label10.Size = new Size(190, 23);
+            label10.TabIndex = 23;
+            label10.Text = "Đăng ký xác thực Gmail";
+            label10.TextAlign = ContentAlignment.TopRight;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.GreenYellow;
+            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.ForeColor = Color.Blue;
+            label9.Location = new Point(11, 45);
+            label9.Name = "label9";
+            label9.Size = new Size(320, 23);
+            label9.TabIndex = 23;
+            label9.Text = "Gửi mật khẩu về mail khi quên mật khảu";
+            label9.TextAlign = ContentAlignment.TopRight;
             // 
             // label8
             // 
@@ -210,30 +235,6 @@
             label8.TabIndex = 23;
             label8.Text = "Thông tin cập nhật";
             label8.TextAlign = ContentAlignment.TopRight;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.Chocolate;
-            label9.Location = new Point(7, 10);
-            label9.Name = "label9";
-            label9.Size = new Size(320, 23);
-            label9.TabIndex = 23;
-            label9.Text = "Gửi mật khẩu về mail khi quên mật khảu";
-            label9.TextAlign = ContentAlignment.TopRight;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.Chocolate;
-            label10.Location = new Point(7, 45);
-            label10.Name = "label10";
-            label10.Size = new Size(190, 23);
-            label10.TabIndex = 23;
-            label10.Text = "Đăng ký xác thực Gmail";
-            label10.TextAlign = ContentAlignment.TopRight;
             // 
             // LoginForm
             // 

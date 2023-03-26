@@ -2,6 +2,40 @@
   "version": 3,
   "targets": {
     "net7.0-windows7.0": {
+      "AForge/2.2.5": {
+        "type": "package",
+        "compile": {
+          "lib/AForge.dll": {}
+        },
+        "runtime": {
+          "lib/AForge.dll": {}
+        }
+      },
+      "AForge.Imaging/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "AForge": "2.2.5",
+          "AForge.Math": "2.2.5"
+        },
+        "compile": {
+          "lib/AForge.Imaging.dll": {}
+        },
+        "runtime": {
+          "lib/AForge.Imaging.dll": {}
+        }
+      },
+      "AForge.Math/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "AForge": "2.2.5"
+        },
+        "compile": {
+          "lib/AForge.Math.dll": {}
+        },
+        "runtime": {
+          "lib/AForge.Math.dll": {}
+        }
+      },
       "Emgu.CV/4.6.0.5131": {
         "type": "package",
         "dependencies": {
@@ -505,6 +539,29 @@
       "OpenCV/2.4.11": {
         "type": "package"
       },
+      "OpenCVSharp/2.4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/OpenCvSharp.Blob.dll": {},
+          "lib/OpenCvSharp.CPlusPlus.dll": {},
+          "lib/OpenCvSharp.DebuggerVisualizers.dll": {},
+          "lib/OpenCvSharp.Extensions.dll": {},
+          "lib/OpenCvSharp.Gpu.dll": {},
+          "lib/OpenCvSharp.MachineLearning.dll": {},
+          "lib/OpenCvSharp.UserInterface.dll": {},
+          "lib/OpenCvSharp.dll": {}
+        },
+        "runtime": {
+          "lib/OpenCvSharp.Blob.dll": {},
+          "lib/OpenCvSharp.CPlusPlus.dll": {},
+          "lib/OpenCvSharp.DebuggerVisualizers.dll": {},
+          "lib/OpenCvSharp.Extensions.dll": {},
+          "lib/OpenCvSharp.Gpu.dll": {},
+          "lib/OpenCvSharp.MachineLearning.dll": {},
+          "lib/OpenCvSharp.UserInterface.dll": {},
+          "lib/OpenCvSharp.dll": {}
+        }
+      },
       "Portable.BouncyCastle/1.9.0": {
         "type": "package",
         "compile": {
@@ -970,6 +1027,45 @@
     }
   },
   "libraries": {
+    "AForge/2.2.5": {
+      "sha512": "clkumhM9DggqIzEXAHgVLeWO4arG5YfoPr7J4jfjJx35AoeEIJSSm49J25bwp/9mXQYLwi7y1Wunc8qgYJsGxg==",
+      "type": "package",
+      "path": "aforge/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aforge.2.2.5.nupkg.sha512",
+        "aforge.nuspec",
+        "lib/AForge.dll",
+        "lib/AForge.xml"
+      ]
+    },
+    "AForge.Imaging/2.2.5": {
+      "sha512": "n8l7Zdsm89EFW9Uz4uCO3D428Gu4Q56YxixSMJPruen1c30R8R9Mm8AreTdoOi2XjN5id04JwFFlXYTk8pIIfw==",
+      "type": "package",
+      "path": "aforge.imaging/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aforge.imaging.2.2.5.nupkg.sha512",
+        "aforge.imaging.nuspec",
+        "lib/AForge.Imaging.dll",
+        "lib/AForge.Imaging.xml"
+      ]
+    },
+    "AForge.Math/2.2.5": {
+      "sha512": "pmT1WobVv13vMxwXhCu8sRunxjiUHyURWS0+dsW/aBPi06xiyYIdCLHI6jph9Axb4QoLIlb85eBI6zd2EAbGIg==",
+      "type": "package",
+      "path": "aforge.math/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aforge.math.2.2.5.nupkg.sha512",
+        "aforge.math.nuspec",
+        "lib/AForge.Math.dll",
+        "lib/AForge.Math.xml"
+      ]
+    },
     "Emgu.CV/4.6.0.5131": {
       "sha512": "pRtYFTe+IZBoxm79cfkAS2QHnmLiz6upyKJNUnxUyVrOlw+QoLL7lx1siXCruvOVU5wkxCqOCBYDHnDNBSURsQ==",
       "type": "package",
@@ -2022,6 +2118,33 @@
         "build/publisher-info.txt",
         "opencv.2.4.11.nupkg.sha512",
         "opencv.nuspec"
+      ]
+    },
+    "OpenCVSharp/2.4.0.1": {
+      "sha512": "tGa7NCBHvUCbZRo+YbmY6bMgw/iFikXqrHSzLtg0BIRWH1hp/lbzNm3VQUq0wr6UXeHQf12hiRWEMuGGhIks4w==",
+      "type": "package",
+      "path": "opencvsharp/2.4.0.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/OpenCvSharp.Blob.dll.config",
+        "content/OpenCvSharp.CPlusPlus.dll.config",
+        "content/OpenCvSharp.MachineLearning.dll.config",
+        "content/OpenCvSharp.dll.config",
+        "content/OpenCvSharpExtern.dll",
+        "content/libOpenCvSharpExtern.so",
+        "lib/OpenCvSharp.Blob.dll",
+        "lib/OpenCvSharp.CPlusPlus.dll",
+        "lib/OpenCvSharp.DebuggerVisualizers.dll",
+        "lib/OpenCvSharp.Extensions.dll",
+        "lib/OpenCvSharp.Gpu.dll",
+        "lib/OpenCvSharp.MachineLearning.dll",
+        "lib/OpenCvSharp.UserInterface.dll",
+        "lib/OpenCvSharp.dll",
+        "opencvsharp.2.4.0.1.nupkg.sha512",
+        "opencvsharp.nuspec",
+        "tools/install.ps1"
       ]
     },
     "Portable.BouncyCastle/1.9.0": {
@@ -3340,11 +3463,14 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
+      "AForge >= 2.2.5",
+      "AForge.Imaging >= 2.2.5",
       "Emgu.CV >= 4.6.0.5131",
       "FireSharp >= 2.0.4",
       "MailKit >= 3.6.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.4",
       "OpenCV >= 2.4.11",
+      "OpenCVSharp >= 2.4.0.1",
       "System.Configuration.ConfigurationManager >= 7.0.0"
     ]
   },
@@ -3394,6 +3520,14 @@
       "net7.0-windows7.0": {
         "targetAlias": "net7.0-windows",
         "dependencies": {
+          "AForge": {
+            "target": "Package",
+            "version": "[2.2.5, )"
+          },
+          "AForge.Imaging": {
+            "target": "Package",
+            "version": "[2.2.5, )"
+          },
           "Emgu.CV": {
             "target": "Package",
             "version": "[4.6.0.5131, )"
@@ -3413,6 +3547,10 @@
           "OpenCV": {
             "target": "Package",
             "version": "[2.4.11, )"
+          },
+          "OpenCVSharp": {
+            "target": "Package",
+            "version": "[2.4.0.1, )"
           },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
@@ -3443,6 +3581,36 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge.Imaging 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge.Imaging",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge.Math 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge.Math",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
@@ -3489,6 +3657,16 @@
       "warningLevel": 1,
       "message": "Package 'Newtonsoft.Json 6.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenCVSharp 2.4.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenCVSharp",
       "targetGraphs": [
         "net7.0-windows7.0"
       ]

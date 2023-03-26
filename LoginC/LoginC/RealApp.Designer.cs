@@ -30,12 +30,11 @@
         {
             btnSend = new Button();
             button2 = new Button();
-            button3 = new Button();
             SuspendLayout();
             // 
             // btnSend
             // 
-            btnSend.Location = new Point(253, 231);
+            btnSend.Location = new Point(253, 240);
             btnSend.Name = "btnSend";
             btnSend.Size = new Size(108, 34);
             btnSend.TabIndex = 0;
@@ -53,22 +52,11 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // button3
-            // 
-            button3.Location = new Point(395, 84);
-            button3.Name = "button3";
-            button3.Size = new Size(167, 47);
-            button3.TabIndex = 3;
-            button3.Text = "click ảnh";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
             // RealApp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(btnSend);
             Name = "RealApp";
@@ -81,6 +69,5 @@
 
         private Button btnSend;
         private Button button2;
-        private Button button3;
     }
 }
