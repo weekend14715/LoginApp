@@ -161,7 +161,8 @@
             labelVersion.Name = "labelVersion";
             labelVersion.Size = new Size(75, 20);
             labelVersion.TabIndex = 24;
-            labelVersion.Text = "Ver 1.0.1.1";
+            labelVersion.Text = "Ver 1.0.1.2";
+            labelVersion.Click += labelVersion_Click;
             // 
             // label7
             // 

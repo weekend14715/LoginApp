@@ -30,6 +30,7 @@
         {
             button1 = new Button();
             label1 = new Label();
+            labelVersion = new Label();
             SuspendLayout();
             // 
             // button1
@@ -53,11 +54,21 @@
             label1.TabIndex = 1;
             label1.Text = "Chọn ứng dụng mà bạn muốn cập nhật";
             // 
+            // labelVersion
+            // 
+            labelVersion.AutoSize = true;
+            labelVersion.Location = new Point(322, 421);
+            labelVersion.Name = "labelVersion";
+            labelVersion.Size = new Size(75, 20);
+            labelVersion.TabIndex = 25;
+            labelVersion.Text = "Ver 1.0.1.3";
+            // 
             // RealApp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(labelVersion);
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "RealApp";
@@ -70,5 +81,6 @@
 
         private Button button1;
         internal Label label1;
+        private Label labelVersion;
     }
 }

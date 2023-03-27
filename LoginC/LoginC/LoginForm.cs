@@ -198,6 +198,11 @@ namespace LoginC
             label6.ForeColor = Color.Cyan;
 
         }
+
+        private void labelVersion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
