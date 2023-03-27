@@ -28,46 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnSend = new Button();
-            button2 = new Button();
+            button1 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
-            // btnSend
+            // button1
             // 
-            btnSend.Location = new Point(253, 240);
-            btnSend.Name = "btnSend";
-            btnSend.Size = new Size(108, 34);
-            btnSend.TabIndex = 0;
-            btnSend.Text = "button1";
-            btnSend.UseVisualStyleBackColor = true;
-            btnSend.Click += btnSend_Click;
+            button1.Location = new Point(117, 169);
+            button1.Name = "button1";
+            button1.Size = new Size(237, 62);
+            button1.TabIndex = 0;
+            button1.Text = "Bàn giao tiền";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // button2
+            // label1
             // 
-            button2.Location = new Point(413, 240);
-            button2.Name = "button2";
-            button2.Size = new Size(127, 34);
-            button2.TabIndex = 2;
-            button2.Text = "button1";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.DodgerBlue;
+            label1.Location = new Point(117, 80);
+            label1.Name = "label1";
+            label1.Size = new Size(568, 41);
+            label1.TabIndex = 1;
+            label1.Text = "Chọn ứng dụng mà bạn muốn cập nhật";
             // 
             // RealApp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(btnSend);
+            Controls.Add(label1);
+            Controls.Add(button1);
             Name = "RealApp";
             Text = "RealApp";
-            Load += RealApp_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button btnSend;
-        private Button button2;
+        private Button button1;
+        internal Label label1;
     }
 }

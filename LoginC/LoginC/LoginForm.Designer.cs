@@ -161,7 +161,7 @@
             labelVersion.Name = "labelVersion";
             labelVersion.Size = new Size(75, 20);
             labelVersion.TabIndex = 24;
-            labelVersion.Text = "Ver 1.0.1.0";
+            labelVersion.Text = "Ver 1.0.1.1";
             // 
             // label7
             // 
@@ -258,6 +258,7 @@
             Controls.Add(label1);
             Controls.Add(LogBtn);
             Controls.Add(regBtn);
+            MaximizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
