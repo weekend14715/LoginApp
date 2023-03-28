@@ -130,7 +130,7 @@ namespace LoginC
                 this.Hide();
 
                 // Mở cửa sổ RealApp
-                RealApp realAppForm = new RealApp();
+                Chon_Ung_Dung realAppForm = new Chon_Ung_Dung();
                 realAppForm.Show();
             }
 
