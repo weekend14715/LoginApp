@@ -45,6 +45,8 @@
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
+            label11 = new Label();
+            label12 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -161,7 +163,7 @@
             labelVersion.Name = "labelVersion";
             labelVersion.Size = new Size(75, 20);
             labelVersion.TabIndex = 24;
-            labelVersion.Text = "Ver 1.0.1.2";
+            labelVersion.Text = "Ver 1.0.1.3";
             labelVersion.Click += labelVersion_Click;
             // 
             // label7
@@ -194,6 +196,8 @@
             // 
             panel1.BackColor = Color.GreenYellow;
             panel1.Controls.Add(label10);
+            panel1.Controls.Add(label12);
+            panel1.Controls.Add(label11);
             panel1.Controls.Add(label9);
             panel1.Location = new Point(56, 185);
             panel1.Name = "panel1";
@@ -236,6 +240,32 @@
             label8.TabIndex = 23;
             label8.Text = "Thông tin cập nhật";
             label8.TextAlign = ContentAlignment.TopRight;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.GreenYellow;
+            label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.ForeColor = Color.Crimson;
+            label11.Location = new Point(11, 75);
+            label11.Name = "label11";
+            label11.Size = new Size(271, 23);
+            label11.TabIndex = 23;
+            label11.Text = "Cập nhật ứng dụng Bàn giao tiền ";
+            label11.TextAlign = ContentAlignment.TopRight;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.GreenYellow;
+            label12.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.ForeColor = Color.Crimson;
+            label12.Location = new Point(11, 106);
+            label12.Name = "label12";
+            label12.Size = new Size(258, 23);
+            label12.TabIndex = 23;
+            label12.Text = "Cập nhật ứng dụng Nhiệt ẩm kế";
+            label12.TextAlign = ContentAlignment.TopRight;
             // 
             // LoginForm
             // 
@@ -289,5 +319,7 @@
         private Label label10;
         private Label label9;
         private Label label8;
+        private Label label12;
+        private Label label11;
     }
 }
