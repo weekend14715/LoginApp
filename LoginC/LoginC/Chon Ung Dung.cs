@@ -26,5 +26,11 @@ namespace LoginC
             RealApp realAppForm = new RealApp();
             realAppForm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Nhietamke realAppForm = new Nhietamke();
+            realAppForm.Show();
+        }
     }
 }

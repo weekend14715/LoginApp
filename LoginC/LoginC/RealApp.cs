@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using System.IO;
 using System.Net;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Drive.v3;
+using Google.Apis.Services;
 
 
 namespace LoginC
@@ -32,6 +35,27 @@ namespace LoginC
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            // Xác thực và tạo service
+            UserCredential credential;
+            using (var stream = new FileStream("client_secret.json", FileMode.Open, FileAccess.Read))
+            {
+                credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                    GoogleClientSecrets.Load(stream).Secrets,
+                    new[] { DriveService.Scope.Drive },
+                    "user",
+                    System.Threading.CancellationToken.None).Result;
+            }
+
+            var service = new DriveService(new BaseClientService.Initializer()
+            {
+                HttpClientInitializer = credential,
+                ApplicationName = "Google Drive API Sample",
+            });
+
+            // Đường dẫn đến thư mục trên Google Drive cần tải về
+            var folderId = "1zSj-nqetVJyaIqA7vQDfH1DUPVmJRR1_";
+
             if (selectedFolderPath == null)
             {
                 var dialog = new FolderBrowserDialog();
@@ -41,24 +65,30 @@ namespace LoginC
                 {
                     selectedFolderPath = dialog.SelectedPath;
                 }
-
             }
 
             if (selectedFolderPath != null)
             {
-                // Đường dẫn đến file trên Google Drive
-                string fileUrl = "https://public.dm.files.1drv.com/y4mlOsIPKltWonFgy0boii-9aKRyCb4UivT-n_C9oekpILo2CkiiVz4QibGartojQW00QC1zHINfIQiQmSZhzZjHdHE18PtPFGiOOjWLUAzgCTC43FWSGWr-2fGQ3-UPHTkWgYKLKmpa6NwfLLYyMJwgY6_bcvfoJ3ahhvnmhQbnzGzmDf_Cf-sdUW1OT1r4ByaIN6tJSFoLGNRCFfnnfiQc82fooJ2wWV7cH-ro1nJPiQ?AVOverride=1";
-
-                // Tải xuống file từ Google Drive
-                using (var client = new WebClient())
+                // Tải xuống các file từ thư mục
+                var request = service.Files.List();
+                request.Q = $"'{folderId}' in parents";
+                request.Fields = "nextPageToken, files(id, name)";
+                var results = request.Execute();
+                foreach (var file in results.Files)
                 {
-                    string filePath = Path.Combine(selectedFolderPath, "BAN GIAO TIEN.xlsm");
-                    client.DownloadFile(fileUrl, filePath);
+                    var fileId = file.Id;
+                    var fileName = file.Name;
+                    var requestDownload = service.Files.Get(fileId);
+                    var streamDownload = new MemoryStream();
+                    requestDownload.Download(streamDownload);
+                    streamDownload.Position = 0;
+                    var filePath = Path.Combine(selectedFolderPath, fileName);
+                    var fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write);
+                    streamDownload.CopyTo(fileStream);
+                    fileStream.Close();
                 }
 
-                // Thông báo thành công
-                MessageBox.Show("Cập nhật thành công!", "Thành công");
-
+                MessageBox.Show("Cập nhật hoàn tất.");
                 // Lưu đường dẫn vào AppData
                 string directory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "LoginC");
                 if (!Directory.Exists(directory))
@@ -66,6 +96,7 @@ namespace LoginC
                     Directory.CreateDirectory(directory);
                 }
                 File.WriteAllText(Path.Combine(directory, "path.txt"), selectedFolderPath);
+
             }
         }
 

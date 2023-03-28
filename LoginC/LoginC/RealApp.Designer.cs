@@ -30,7 +30,6 @@
         {
             button1 = new Button();
             label1 = new Label();
-            labelVersion = new Label();
             panel1 = new Panel();
             button2 = new Button();
             label2 = new Label();
@@ -59,15 +58,6 @@
             label1.TabIndex = 1;
             label1.Text = "BÀN GIAO TIỀN";
             // 
-            // labelVersion
-            // 
-            labelVersion.AutoSize = true;
-            labelVersion.Location = new Point(361, 492);
-            labelVersion.Name = "labelVersion";
-            labelVersion.Size = new Size(75, 20);
-            labelVersion.TabIndex = 25;
-            labelVersion.Text = "Ver 1.0.1.3";
-            // 
             // panel1
             // 
             panel1.BackColor = Color.Honeydew;
@@ -90,11 +80,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Crimson;
             label2.Location = new Point(170, 124);
             label2.Name = "label2";
-            label2.Size = new Size(156, 23);
+            label2.Size = new Size(162, 23);
             label2.TabIndex = 28;
             label2.Text = "Thông tin cập nhật";
             // 
@@ -107,7 +97,6 @@
             Controls.Add(label2);
             Controls.Add(button2);
             Controls.Add(panel1);
-            Controls.Add(labelVersion);
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "RealApp";
@@ -121,7 +110,6 @@
 
         private Button button1;
         internal Label label1;
-        private Label labelVersion;
         private Panel panel1;
         private Button button2;
         private Label label2;
