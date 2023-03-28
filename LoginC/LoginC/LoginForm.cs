@@ -32,8 +32,8 @@ namespace LoginC
         }
         IFirebaseConfig ifc = new FirebaseConfig()
         {
-            AuthSecret = "KO6iXy2pRi7kkeZ5QxWyGgei2NHTQpgCuXQmMd3d",
-            BasePath = "https://sever1-143bb-default-rtdb.firebaseio.com/"
+            AuthSecret = "yfTjdYfH7c5vLGrrvOYul9qFcbkxM9HHYgkNlmaP",
+            BasePath = "https://loginc-141a6-default-rtdb.firebaseio.com/"
         };
         IFirebaseClient client;
         private void LoginForm_Load(object sender, EventArgs e)
@@ -161,7 +161,7 @@ namespace LoginC
 
                 // Khởi tạo một email message
                 var message = new MimeMessage();
-                message.From.Add(new MailboxAddress("Hoàng Tuấn", "ctump147@gmail.com"));
+                message.From.Add(new MailboxAddress("Hoàng Tuấn", "ctump14715@gmail.com"));
                 message.To.Add(new MailboxAddress("Tên người nhận", ResUser.Email + "@gmail.com"));
                 message.Subject = "Thông tin mật khẩu";
 
@@ -176,7 +176,7 @@ namespace LoginC
                 using (var client = new SmtpClient())
                 {
                     await client.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-                    await client.AuthenticateAsync("ctump147@gmail.com", "dogzqaasxcubltwo");
+                    await client.AuthenticateAsync("ctump14715@gmail.com", "zxdltsqdksxwdhxm");
                     await client.SendAsync(message);
                     await client.DisconnectAsync(true);
                 }
