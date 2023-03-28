@@ -30,7 +30,7 @@ namespace LoginC
             if (result == DialogResult.OK)
             {
                 // Đường dẫn đến file trên Google Drive
-                string fileUrl = "https://public.dm.files.1drv.com/y4msS91qpP8SiESBIOu9bGyuyAx1_VznwrjUw-9UBTEA4oUmuiJJuMTx3GRj3JUAtzUtsAG5VrK22KKwhmr6m0kilFSfBPR7aRO2Y2MTHygQsiLfDYBlT8zO3jyD__lkER4LwnJ7jk1GYQXVaGfRjRABZy1DQecZLnabguTRdTI5eeBSSLErq9CxNnUf79mFa_YyasOplPC5Ta7z26VWK4bxAsVQGXyhZv8mIERAuucq1g?AVOverride=1";
+                string fileUrl = "https://public.dm.files.1drv.com/y4mQdccYQmfpDxTCDdpLYONa8YCRsH_aRMeIUctQ8tYtSs6DmVAAqM5tBvqhwQpLfNccfeukqPgaqGWDKIjTJJJ9fysDT-am5OqLMZju-6HvkzQfHcYFaquKMECRDabmwDhm8XsGY0TgnEVIX356-DHCsJdS4-TYb0mV5gO366zkaSPlc22Jn8SrRJdOfZ6jmk30dFwfLsDopf7jWoN8Iq6CDbNZfqBa_UWMTSgUlTPgag?AVOverride=1";
 
                 // Đường dẫn đến thư mục chứa file trên máy tính
                 string folderPath = dialog.SelectedPath;
