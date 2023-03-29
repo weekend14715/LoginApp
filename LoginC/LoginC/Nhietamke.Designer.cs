@@ -33,6 +33,7 @@
             label1 = new Label();
             button2 = new Button();
             button3 = new Button();
+            Version = new Button();
             SuspendLayout();
             // 
             // label2
@@ -88,12 +89,23 @@
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
+            // Version
+            // 
+            Version.Location = new Point(651, 406);
+            Version.Name = "Version";
+            Version.Size = new Size(106, 50);
+            Version.TabIndex = 34;
+            Version.Text = "Test";
+            Version.UseVisualStyleBackColor = true;
+            Version.Click += Version_Click;
+            // 
             // Nhietamke
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cyan;
             ClientSize = new Size(800, 513);
+            Controls.Add(Version);
             Controls.Add(button2);
             Controls.Add(button3);
             Controls.Add(label2);
@@ -112,5 +124,6 @@
         internal Label label1;
         private Button button2;
         private Button button3;
+        private Button Version;
     }
 }

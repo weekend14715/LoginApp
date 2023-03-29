@@ -32,7 +32,7 @@ namespace LoginC
         }
         IFirebaseConfig ifc = new FirebaseConfig()
         {
-            AuthSecret = "yfTjdYfH7c5vLGrrvOYul9qFcbkxM9HHYgkNlmaP",
+            AuthSecret = "r1kZ8XFprzITFgKLotwA281RyUwGdJ8VqPO2cKLN",
             BasePath = "https://loginc-141a6-default-rtdb.firebaseio.com/"
         };
         IFirebaseClient client;

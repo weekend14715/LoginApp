@@ -104,6 +104,51 @@ namespace LoginC
             DialogResult result = dialog.ShowDialog();
             selectedFolderPath = dialog.SelectedPath;
         }
+
+        private void Version_Click(object sender, EventArgs e)
+        {
+            {
+                UserCredential credential;
+                using (var stream = new FileStream("client_secret.json", FileMode.Open, FileAccess.Read))
+                {
+                    credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                        GoogleClientSecrets.Load(stream).Secrets,
+                        new[] { DriveService.Scope.Drive },
+                        "user",
+                        System.Threading.CancellationToken.None).Result;
+                }
+
+                var service = new DriveService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Google Drive API Sample",
+                });
+
+                // Đường dẫn đến thư mục trên Google Drive cần tải về
+                var folderId = "1ltvPUmKdJTX5CfLOoRq8nnT38wIh4kLo";
+
+                // Lấy danh sách tập tin trong thư mục
+                var request = service.Files.List();
+                request.Q = $"'{folderId}' in parents and name = 'Test.txt'";
+                request.Fields = "files(id, name)";
+                var results = request.Execute();
+                if (results.Files.Count > 0)
+                {
+                    var file = results.Files[0];
+                    var fileId = file.Id;
+                    var requestDownload = service.Files.Get(fileId);
+                    var streamDownload = new MemoryStream();
+                    requestDownload.Download(streamDownload);
+                    streamDownload.Position = 0;
+                    var fileContent = new StreamReader(streamDownload).ReadToEnd();
+                    MessageBox.Show($"Nội dung của tập tin Test.txt: {fileContent}");
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy tập tin Test.txt trong thư mục.");
+                }
+            }
+        }
     }
 }
 
