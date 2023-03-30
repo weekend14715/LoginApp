@@ -134,13 +134,13 @@
       <dsig:DigestValue>3wqWnfSSPXkyQjQ1+PgfD4B5uCd32wxOW04xPoikbrQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LoginC.dll" size="40448">
+  <file name="LoginC.dll" size="39936">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>OD2cm68otBK8z7/C8ol35iiXAZkCrmPufGHyQHMan4g=</dsig:DigestValue>
+      <dsig:DigestValue>z/goYT51fXC/6lK8LXCIM8wByXn4IoSLW5jTbWPA53s=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LoginC.dll.config" size="1140">

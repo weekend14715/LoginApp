@@ -49,7 +49,9 @@ namespace LoginC
 
 
         private void LoginForm_Load(object sender, EventArgs e)
+
         {
+
 
             try
             {
@@ -74,26 +76,39 @@ namespace LoginC
                 if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
                 {
                     checkBox1.Checked = true;
-                }
-                string tempPath = Path.GetTempPath();
-                string filePath = Path.Combine(tempPath, "login.txt");
 
-                if (File.Exists(filePath))
-                {
-                    string[] loginInfo = File.ReadAllText(filePath).Split(',');
-                    string username1 = loginInfo[0];
-                    string password1 = loginInfo[1];
+                    // Nếu cả ô tài khoản và mật khẩu đều có giá trị thì tự động đăng nhập
+                    // Tắt cửa sổ đăng nhập
 
-                    // Sử dụng tên đăng nhập và mật khẩu để đăng nhập
-                    UsernameTbox.Text = username1;
-                    passTbox.Text = password1;
-                    // Đồng thời kiểm tra CheckBox để đánh dấu ô nhớ mật khẩu
-                    checkBox1.Checked = true;
+                    // Mở cửa sổ RealApp
+                   
+
+
+
+
                 }
+
+            }
+            string tempPath = Path.GetTempPath();
+            string filePath = Path.Combine(tempPath, "login.txt");
+
+            if (File.Exists(filePath))
+            {
+                string[] loginInfo = File.ReadAllText(filePath).Split(',');
+                string username1 = loginInfo[0];
+                string password1 = loginInfo[1];
+
+                // Sử dụng tên đăng nhập và mật khẩu để đăng nhập
+                UsernameTbox.Text = username1;
+                passTbox.Text = password1;
+                // Đồng thời kiểm tra CheckBox để đánh dấu ô nhớ mật khẩu
+                checkBox1.Checked = true;
             }
 
 
+
         }
+
 
 
         private static Settings GetDefault()
@@ -238,6 +253,14 @@ namespace LoginC
         private void labelVersion_Click(object sender, EventArgs e)
         {
 
+        }
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Application.OpenForms.OfType<Chon_Ung_Dung>().Any())
+            {
+                // Nếu form Chon_Ung_Dung đang được hiển thị thì đóng form LoginForm
+                this.Hide();
+            }
         }
     }
 

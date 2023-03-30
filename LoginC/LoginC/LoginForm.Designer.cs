@@ -163,7 +163,7 @@
             labelVersion.Name = "labelVersion";
             labelVersion.Size = new Size(39, 20);
             labelVersion.TabIndex = 24;
-            labelVersion.Text = "1.0.2";
+            labelVersion.Text = "1.0.3";
             labelVersion.Click += labelVersion_Click;
             // 
             // label7
@@ -293,6 +293,7 @@
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
+            FormClosing += LoginForm_FormClosing;
             Load += LoginForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
