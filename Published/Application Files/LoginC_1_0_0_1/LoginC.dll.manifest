@@ -62,6 +62,15 @@
       <dsig:DigestValue>9CuGCYVNgNf4HydjQFBKpegrvk1z0FCA/vH8yiREtNU=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="client_secret.json" size="404">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TQmyAjPMmST8kUH0vuAYZXT4Rz9+2l2PzIZGMTa0qFg=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="FireSharp.dll" size="40960">
     <hash>
       <dsig:Transforms>
@@ -125,13 +134,13 @@
       <dsig:DigestValue>3wqWnfSSPXkyQjQ1+PgfD4B5uCd32wxOW04xPoikbrQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LoginC.dll" size="39424">
+  <file name="LoginC.dll" size="40960">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>7cNQqOVNVNbsBN+4fYM1z3CErCleCDvVdeHtjbFuK64=</dsig:DigestValue>
+      <dsig:DigestValue>U5CSIqZaqlIyF0fNiaoGlWTdiiO5XKleyKdEo/v0few=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LoginC.dll.config" size="1140">
@@ -143,13 +152,13 @@
       <dsig:DigestValue>8auG2yg6Kdlq7cbRdEUAMEabj9nMdP4Q3y5itMVA3PE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LoginC.exe" size="153600">
+  <file name="LoginC.exe" size="154112">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bmoXI88Tcvri+tloNd6wZt0jbwxm21EF1i4BmfOlHxc=</dsig:DigestValue>
+      <dsig:DigestValue>0GnipBT1v60lhR5cp3em5gEcFbNQHXAWCb5S+0Pz4dc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LoginC.runtimeconfig.json" size="441">
@@ -366,6 +375,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>IsZJ91/OW+fHzNqIgEc7Y072ns8z9dGritiSyvR9Wgc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Version.txt" size="5">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>f70hDr7BH2WpcZDvkAeVxLjaOAWvP1objR0nJVaykso=</dsig:DigestValue>
     </hash>
   </file>
   <file name="System.Net.Http.Extensions.dll" size="22224">
