@@ -77,6 +77,7 @@
             Controls.Add(label1);
             Name = "Chon_Ung_Dung";
             Text = "Chon_Ung_Dung";
+            Load += Chon_Ung_Dung_Load;
             ResumeLayout(false);
             PerformLayout();
         }
