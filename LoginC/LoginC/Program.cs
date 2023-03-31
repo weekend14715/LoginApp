@@ -1,4 +1,4 @@
-namespace LoginC
+﻿namespace LoginC
 {
     internal static class Program
     {

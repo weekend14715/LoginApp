@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Drive.v3;
 using Google.Apis.Services;
+using Microsoft.Win32;
 
 namespace LoginC
 {
@@ -105,49 +106,37 @@ namespace LoginC
             selectedFolderPath = dialog.SelectedPath;
         }
 
-        private void Version_Click(object sender, EventArgs e)
+        
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            {
-                UserCredential credential;
-                using (var stream = new FileStream("client_secret.json", FileMode.Open, FileAccess.Read))
+            
+                string fileName = Path.Combine(selectedFolderPath, "Nhiet am ke.xlsm");
+                string excelPath = "";
+                RegistryKey excelKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\excel.exe");
+                if (excelKey != null)
                 {
-                    credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
-                        GoogleClientSecrets.Load(stream).Secrets,
-                        new[] { DriveService.Scope.Drive },
-                        "user",
-                        System.Threading.CancellationToken.None).Result;
+                    object excelValue = excelKey.GetValue("");
+                    if (excelValue != null)
+                    {
+                        excelPath = excelValue.ToString();
+                    }
                 }
 
-                var service = new DriveService(new BaseClientService.Initializer()
+                if (string.IsNullOrEmpty(excelPath))
                 {
-                    HttpClientInitializer = credential,
-                    ApplicationName = "Google Drive API Sample",
-                });
-
-                // Đường dẫn đến thư mục trên Google Drive cần tải về
-                var folderId = "1ltvPUmKdJTX5CfLOoRq8nnT38wIh4kLo";
-
-                // Lấy danh sách tập tin trong thư mục
-                var request = service.Files.List();
-                request.Q = $"'{folderId}' in parents and name = 'Test.txt'";
-                request.Fields = "files(id, name)";
-                var results = request.Execute();
-                if (results.Files.Count > 0)
-                {
-                    var file = results.Files[0];
-                    var fileId = file.Id;
-                    var requestDownload = service.Files.Get(fileId);
-                    var streamDownload = new MemoryStream();
-                    requestDownload.Download(streamDownload);
-                    streamDownload.Position = 0;
-                    var fileContent = new StreamReader(streamDownload).ReadToEnd();
-                    MessageBox.Show($"Nội dung của tập tin Test.txt: {fileContent}");
+                    // File excel.exe không tồn tại trên máy tính
                 }
                 else
                 {
-                    MessageBox.Show("Không tìm thấy tập tin Test.txt trong thư mục.");
+                    // Sử dụng đường dẫn excelPath để thực thi file excel.exe
                 }
-            }
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                process.StartInfo.FileName = excelPath;
+                process.StartInfo.Arguments = "\"" + fileName + "\"";
+                process.Start();
+            
+
         }
     }
 }

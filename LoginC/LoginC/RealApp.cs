@@ -14,6 +14,9 @@ using Google.Apis.Auth.OAuth2;
 using Google.Apis.Drive.v3;
 using Google.Apis.Services;
 using Excel = Microsoft.Office.Interop.Excel;
+using System.Diagnostics;
+using System.Reflection;
+using Microsoft.Win32;
 
 
 
@@ -115,11 +118,32 @@ namespace LoginC
         }
         
         private void button3_Click(object sender, EventArgs e)
+
         {
-            string filepath = Path.Combine(selectedFolderPath, "BAN GIAO TIEN.xlsm");
-            Excel.Application excel = new Excel.Application();
-            excel.Visible = true;
-            Excel.Workbook workbook = excel.Workbooks.Open(filepath, ReadOnly: false);
+            string fileName = Path.Combine(selectedFolderPath, "BAN GIAO TIEN.xlsm");
+            string excelPath = "";
+            RegistryKey excelKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\excel.exe");
+            if (excelKey != null)
+            {
+                object excelValue = excelKey.GetValue("");
+                if (excelValue != null)
+                {
+                    excelPath = excelValue.ToString();
+                }
+            }
+
+            if (string.IsNullOrEmpty(excelPath))
+            {
+                // File excel.exe không tồn tại trên máy tính
+            }
+            else
+            {
+                // Sử dụng đường dẫn excelPath để thực thi file excel.exe
+            }
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            process.StartInfo.FileName = excelPath;
+            process.StartInfo.Arguments = "\"" + fileName + "\"";
+            process.Start();
         }
     }
 }
