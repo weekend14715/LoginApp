@@ -35,6 +35,7 @@ C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-wind
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\Microsoft.Extensions.Primitives.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\System.Net.Http.Extensions.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\System.Net.Http.Primitives.dll
+C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\Microsoft.Office.Interop.Excel.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\MimeKit.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\Newtonsoft.Json.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\app.publish\BouncyCastle.Crypto.dll

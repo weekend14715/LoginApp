@@ -31,8 +31,8 @@ namespace LoginC
         }
         IFirebaseConfig ifc = new FirebaseConfig()
         {
-            AuthSecret = "TqbVp8CNinXRvBK2WuMU021HuccuLmF75HfpKHNB",
-            BasePath = "https://loginc-c102f-default-rtdb.firebaseio.com/"
+            AuthSecret = "8MeOiBZn7FO7MYzZyOkPJhxpgM7gMgl7oNXQa77l",
+            BasePath = "https://loginc-7193c-default-rtdb.firebaseio.com/"
         };
 
         IFirebaseClient client;
@@ -69,7 +69,7 @@ namespace LoginC
         {
             // create a new email message
             MimeMessage message = new MimeMessage();
-            message.From.Add(new MailboxAddress("Hoàng Tuấn", "weekend258147@gmail.com"));
+            message.From.Add(new MailboxAddress("Hoàng Tuấn", "weekend147258@gmail.com"));
             message.To.Add(new MailboxAddress("", MailTbox.Text + "@gmail.com"));
             message.Subject = "Email Verification";
             message.Body = new TextPart("plain")
@@ -81,7 +81,7 @@ namespace LoginC
             using (SmtpClient client = new SmtpClient())
             {
                 client.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-                client.Authenticate("weekend258147@gmail.com", "etxgkuqmjlainsvn");
+                client.Authenticate("weekend147258@gmail.com", "lxylgmbbwecbbzez");
                 client.Send(message);
                 client.Disconnect(true);
             }

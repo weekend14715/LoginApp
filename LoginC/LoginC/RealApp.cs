@@ -13,6 +13,8 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Drive.v3;
 using Google.Apis.Services;
+using Excel = Microsoft.Office.Interop.Excel;
+
 
 
 namespace LoginC
@@ -54,7 +56,7 @@ namespace LoginC
             });
 
             // Đường dẫn đến thư mục trên Google Drive cần tải về
-            var folderId = "1zSj-nqetVJyaIqA7vQDfH1DUPVmJRR1_";
+            var folderId = "1KxznUPXORuTHrpY565nI3w3W22qz7fiK";
 
             if (selectedFolderPath == null)
             {
@@ -110,6 +112,14 @@ namespace LoginC
             var dialog = new FolderBrowserDialog();
             DialogResult result = dialog.ShowDialog();
             selectedFolderPath = dialog.SelectedPath;
+        }
+        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string filepath = Path.Combine(selectedFolderPath, "BAN GIAO TIEN.xlsm");
+            Excel.Application excel = new Excel.Application();
+            excel.Visible = true;
+            Excel.Workbook workbook = excel.Workbooks.Open(filepath, ReadOnly: false);
         }
     }
 }

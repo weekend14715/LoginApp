@@ -57,6 +57,7 @@ C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-wind
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.Nhietamke.resources
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\client_secret.json
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\Resources\Version.txt
+C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\Microsoft.Office.Interop.Excel.dll
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.dll.manifest
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\bin\Release\net7.0-windows\LoginC.application
 C:\Users\hhtua\Downloads\LoginApp\LoginApp\LoginC\LoginC\obj\Release\net7.0-windows\LoginC.dll.manifest

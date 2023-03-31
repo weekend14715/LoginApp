@@ -76,6 +76,7 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Name = "Chon_Ung_Dung";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Chon_Ung_Dung";
             Load += Chon_Ung_Dung_Load;
             ResumeLayout(false);

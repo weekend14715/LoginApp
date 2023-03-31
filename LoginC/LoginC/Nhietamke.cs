@@ -53,7 +53,7 @@ namespace LoginC
             });
 
             // Đường dẫn đến thư mục trên Google Drive cần tải về
-            var folderId = "1ltvPUmKdJTX5CfLOoRq8nnT38wIh4kLo";
+            var folderId = "1YWiEvzu-o9iRAPTMklvIAry109_AQple";
 
             if (selectedFolderPath == null)
             {

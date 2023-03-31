@@ -13,6 +13,7 @@
           "Google.Apis.Drive.v3": "1.60.0.2986",
           "MailKit": "3.6.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.4",
+          "Microsoft.Office.Interop.Excel": "15.0.4795.1001",
           "Newtonsoft.Json": "13.0.3",
           "System.Configuration.ConfigurationManager": "7.0.0"
         },
@@ -326,6 +327,14 @@
           }
         }
       },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Office.Interop.Excel.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.4795.1000"
+          }
+        }
+      },
       "Microsoft.Win32.SystemEvents/7.0.0": {},
       "MimeKit/3.6.0": {
         "dependencies": {
@@ -596,6 +605,13 @@
       "sha512": "sha512-hPL9k+rPIpAj84RZSq3WtJkOD9uMStBovAIAz/0OQ+9hQIwQ2XqQlAhMqI4kw0XDxweJySIqNTMlkhRRuthcPQ==",
       "path": "microsoft.net.http/2.2.28",
       "hashPath": "microsoft.net.http.2.2.28.nupkg.sha512"
+    },
+    "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cuvqi/U5MYSM0gvR2l90q0m/urRgmg69EiwP5VWp1RcaJ0YT5G26Va5LaOZ3KJFc22FNihS5CUjeePUp2YpGQA==",
+      "path": "microsoft.office.interop.excel/15.0.4795.1001",
+      "hashPath": "microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512"
     },
     "Microsoft.Win32.SystemEvents/7.0.0": {
       "type": "package",

@@ -35,7 +35,7 @@ namespace LoginC
 
         private void Chon_Ung_Dung_Load(object sender, EventArgs e)
         {
-           
+
         }
     }
 }

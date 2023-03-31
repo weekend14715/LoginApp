@@ -33,6 +33,7 @@
             panel1 = new Panel();
             button2 = new Button();
             label2 = new Label();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -88,18 +89,32 @@
             label2.TabIndex = 28;
             label2.Text = "Thông tin cập nhật";
             // 
+            // button3
+            // 
+            button3.BackColor = Color.Crimson;
+            button3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            button3.Location = new Point(575, 362);
+            button3.Name = "button3";
+            button3.Size = new Size(109, 75);
+            button3.TabIndex = 29;
+            button3.Text = "RUN";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // RealApp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(800, 520);
+            Controls.Add(button3);
             Controls.Add(label2);
             Controls.Add(button2);
             Controls.Add(panel1);
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "RealApp";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RealApp";
             Load += RealApp_Load;
             ResumeLayout(false);
@@ -113,5 +128,6 @@
         private Panel panel1;
         private Button button2;
         private Label label2;
+        private Button button3;
     }
 }

@@ -112,6 +112,7 @@
             Controls.Add(panel1);
             Controls.Add(label1);
             Name = "Nhietamke";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Nhietamke";
             Load += Nhietamke_Load;
             ResumeLayout(false);
