@@ -176,7 +176,11 @@ namespace LoginC
 
             if (MyUser.IsEqual(ResUser, CurUser))
             {
-
+                string tempPath = Path.GetTempPath();
+                string filePath = Path.Combine(tempPath, "login1.txt");
+                string username = UsernameTbox.Text;
+                string password = passTbox.Text;
+                File.WriteAllText(filePath, $"{username},{password}");
                 // Tắt cửa sổ đăng nhập
                 this.Hide();
 
@@ -262,6 +266,8 @@ namespace LoginC
                 this.Hide();
             }
         }
+
+
     }
 
 }
